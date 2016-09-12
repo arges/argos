@@ -1,6 +1,7 @@
 #include "screen.h"
+#include "../kernel/low_level.h"
 
-inline unsigned short get_screen_offset(int col, int row) {
+static inline unsigned short get_screen_offset(int col, int row) {
 	return ((row * 80) + col);
 }
 
